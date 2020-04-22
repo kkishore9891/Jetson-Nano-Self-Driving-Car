@@ -20,7 +20,11 @@
   <img width="325" height="200" src="https://user-images.githubusercontent.com/34810513/79974333-c3ac8880-84b6-11ea-8b67-1ee88e75583c.jpeg">
 </p>
 
-   Instead of making the AI drive the car in a computer game, we use real world data obtained from a robotic car prototype. The AI processes the real world feed and keeps the prototype at the center of the lane.
+   Instead of making the AI drive the car in a computer game, we use real world data obtained from a robotic car prototype. The AI processes the real world feed and keeps the prototype at the center of the lane. We have used the following architecture which consists of 4 Convolutional layers, 1 fully connected layer and 1 output neuron which predicts the normalised steering angle.
+   
+p align="center">
+  <img width="2360" height="611" src="https://user-images.githubusercontent.com/34810513/79974333-c3ac8880-84b6-11ea-8b67-1ee88e75583c.jpeg">
+</p>
 
 ## Components And Connections
 
@@ -87,7 +91,11 @@ Now that the Arduino Code is ready, it is time to drive the car and collect the 
 
 #### 4.Prepare the Dataset
 
-Copy the Images folder and Target.txt file to the PC folder.
+Copy the Images folder and Target.txt file to the PC folder. Run DATA.py to convert the images into a .npy file containing Inputs and targets to train the neural network. The program creates both the balanced and unbalanced datasets. Use the balanced dataset available in the "Datasets" folder to train the model. This reduces the possibility of overfitting the neural network.
+
+#### 5. Train the Model
+
+Run MODEL.py to run the training program
 
 
 
