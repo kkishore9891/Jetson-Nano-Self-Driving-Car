@@ -98,6 +98,9 @@ Copy the Images folder and Target.txt file to the PC folder. Run DATA.py to conv
 
 Run MODEL.py to run the training program. This code create a custom neural network with the architecture specified above and train it for 30 epochs. To prevent overfitting it uses validation data and performs checkpointing. The models are saved in Models/Model HDF5/Regression by default. The finally created model is the most accurate model. The model makes predictions as shown below. You will see the model returning the steering angles instead of displaying Left, Right or Forward as shown here.
 
+<p align="center">
+  <img width="300" height="250" src="https://user-images.githubusercontent.com/34810513/79984783-46d5da80-84c7-11ea-9d37-5f3076d8b092.gif">
+</p>
 
 
 #### 6. Convert the model to a TF-Lite model
