@@ -41,4 +41,6 @@ Instead of making the AI drive the car in a computer game, we use real world dat
  
  #### Custom regulator circuit
  
+ The Jetson Nano board is a troublesome board. There are 2 major ways through which you can power the board. The first method is to use a 10W micro USB mobile charger and power the board through its micro USB port. Though this is handy and quick, it is not the best way to power the board. Although we can make the project portable using powerbanks, the board automatically switches off when the pwoer drawn by it exceeds 10 Watts. This makes it virtually impossible to use it for projects like our self driving car. Thus, the DC barrel Jack of Jetson Nano can be used to power the board. To do so, a small jumper should be fit into Jetson's J48 pins(For more info visit: https://www.jetsonhacks.com/2019/04/10/jetson-nano-use-more-power/). Once this is ready, we have to power the Jetson board using the LIPO battery. The LIPO battery is powerful and allows high current discharge. However, it supplies a voltage of 11V which will damage the board. This is why we need the 4 regulator ICs each IC has a maximum current rating of 1.5A. Thus connecting 4 of them in parralel lets us draw around 4 Amps of current with a voltage of 5V(20 Watts). This Acts as a stable power supply which can be used in our project.
+ 
  
