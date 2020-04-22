@@ -70,7 +70,7 @@ We used the following components to build our prototype:
 
 ## Using the Code
 
-There are 3 folders in the repository.
+After making the connections as shown above, it is time to setup the software of the Self Driving Car. There are 3 folders in the repository.
 
 1) Arduino Code
 2) Jetson Nano
@@ -80,7 +80,7 @@ Just as the name suggests, each folder contains codes to be run in Arduino UNO, 
 
 #### 1. Download the repository
 
-This is the most simple and obvious step. Download the repository into your PC using the git command or the download option. All the folders have already been arranged for you in a way that the codes will run seamlessly.
+This is the most simple and obvious step. Download the repository into your PC using the git command or the download option. All the folders have already been arranged for you in a way that the codes will run seamlessly. Copy the PC folder into you PC and Jetson Nano folder into your Jetson Board.
 
 #### 2. Upload the Arduino Code
 
@@ -96,7 +96,9 @@ Copy the Images folder and Target.txt file to the PC folder. Run DATA.py to conv
 
 #### 5. Train the Model
 
-Run MODEL.py to run the training program. This code create a custom neural network with the architecture specified above and train it for 30 epochs. To prevent overfitting it uses validation data and performs checkpointing. The models are saved in Models/Model HDF5/Regression by default. The finally created model is the most accurate model.
+Run MODEL.py to run the training program. This code create a custom neural network with the architecture specified above and train it for 30 epochs. To prevent overfitting it uses validation data and performs checkpointing. The models are saved in Models/Model HDF5/Regression by default. The finally created model is the most accurate model. The model makes predictions as shown below. You will see the model returning the steering angles instead of displaying Left, Right or Forward as shown here.
+
+
 
 #### 6. Convert the model to a TF-Lite model
 
@@ -104,7 +106,7 @@ Run CONVERT.py to convert the hdf5 tensorflow model to a TF-Lite model. This qua
 
 #### 7. Run the testing program.
 
-Once the TF Lite Model is ready, copy the model into the Jetson Nano
+Once the TF Lite Model is ready, copy the model into the Jetson Nano/Models folder in your Jetson Nano and run the TEST.py program.
 
 
 
