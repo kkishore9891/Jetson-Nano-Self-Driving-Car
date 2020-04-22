@@ -1,5 +1,5 @@
 # Jetson-Nano-Self-Driving-Car
-   This is a project which uses deep Convolutional Neural Networks to steer a self driving car. It is powered by Jetson Nano and Arduino UNO.
+   This is a project which uses deep Convolutional Neural Networks to steer a self driving car. It is powered by Jetson Nano and Arduino UNO. Check out the demo here: https://www.youtube.com/watch?v=TXqMaFrzIGY&t=73s
 
 <p align="center">
    
@@ -7,8 +7,10 @@
   
 </p>
 
-
    Neural networks are universal function approximators which can be used for different kinds of problems(Classification, Regression, Segmentation, etc). In this self driving car prototype, I have used regression(I have tried classification too but regression is the way to go) to predict the steering angle of a car by using the video feed of the path as input to the neural network. Use this GitHub Repo to help build your own Self Driving Car. You can also alter the code slightly to use a car with Ackerman Steering and Servo Motors instead of using the classic Line Follower styled Chassis that I have used. With that being said, lets get started.
+   
+Before getting started we(Myself and my friend Adithya UR) want to give a Huge Shout Out to Harrison Kinsley, the Founder of the YouTube channel "Sentdex". His series called "Python Plays GTA-V" served as the main inspiration to begin this project (Links for the series provided at the end of README.md). We were also lucky enough to get a personal comment from Sentdex Himself!!!
+
 
 
 ## The Self Driving Car Concept
@@ -116,5 +118,15 @@ Once the TF Lite Model is ready, copy the model into the Jetson Nano/Models fold
 </p>
 
 
+## Note
+
+1) You can change the architecture used to your own architecture by alter the code in MODEL.py in your PC. Make sure to change the destination direction to save the model.
+2) Unless you want to make some changes, do not change the hierarchy of the folders. It is vital that the current hierarchy is preserved as the codes have been written assuming the files required will be available in the respective paths.
+3) I have not provided the datasets that I have used as each path is unique in its own way and chances are that the model that I have trained won't work in your environment. Prepare your own datasets and train your own models.
+
+## Links
+1) Sentdex's Python Plays GTA-V: https://www.youtube.com/watch?v=ks4MPfMq8aQ&list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a
+2) Setting up Jetson Nano: https://www.youtube.com/watch?v=km0yT99eVTY
+3) My Youtube Channel: https://www.youtube.com/channel/UC5xtCVvdDo4zcra9DqoelIA?view_as=subscriber
 
 
