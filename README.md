@@ -96,7 +96,15 @@ Copy the Images folder and Target.txt file to the PC folder. Run DATA.py to conv
 
 #### 5. Train the Model
 
-Run MODEL.py to run the training program
+Run MODEL.py to run the training program. This code create a custom neural network with the architecture specified above and train it for 30 epochs. To prevent overfitting it uses validation data and performs checkpointing. The models are saved in Models/Model HDF5/Regression by default. The finally created model is the most accurate model.
+
+#### 6. Convert the model to a TF-Lite model
+
+Run CONVERT.py to convert the hdf5 tensorflow model to a TF-Lite model. This quantises the hdf5 model by converting the weight from float to int. This retains the accuracy of the mode while making it much lighter. This allows Jetson Nano to perform the computations much faster than the usual. The TF Lite model is saved in Models/TF Lite Models.
+
+#### 7. Run the testing program.
+
+Once the TF Lite Model is ready, copy the model into the Jetson Nano
 
 
 
