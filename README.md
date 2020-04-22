@@ -109,7 +109,9 @@ Run CONVERT.py to convert the hdf5 tensorflow model to a TF-Lite model. This qua
 
 #### 7. Run the testing program.
 
-Once the TF Lite Model is ready, copy the model into the Jetson Nano/Models folder in your Jetson Nano and run the TEST.py program.
+Once the TF Lite Model is ready, copy the model into the Jetson Nano/Models folder in your Jetson Nano and run the TEST.py program. Keep the bot in the center of the track, cross your fingers,hoping that the bot runs like a champ and run the program.
+
+
 
 
 
