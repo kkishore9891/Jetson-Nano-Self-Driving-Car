@@ -23,7 +23,7 @@
 
    Instead of making the AI drive the car in a computer game, we use real world data obtained from a robotic car prototype. The AI processes the real world feed and keeps the prototype at the center of the lane. We have used the following architecture which consists of 4 Convolutional layers, 1 fully connected layer and 1 output neuron which predicts the normalised steering angle.
    
-p align="center">
+<p align="center">
   <img width="1062" height="275" src="https://user-images.githubusercontent.com/34810513/79981811-ecd31600-84c2-11ea-9431-555dff3b42dc.jpg">
 </p>
 
