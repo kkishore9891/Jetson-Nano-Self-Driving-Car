@@ -53,7 +53,7 @@ We used the following components to build our prototype:
   The custom regulator circuit. a) Circuit Diagram (Left) b) Top View (Center) c) Bottom View (Right)
 </p>
 
-   Once the custom regulator circuit is ready, it is time to build the complete circuit. Use the circuit diagram shown below to make the connections. The spacers can be elevate the position of the Jetson board which makes it easier to fit all the components onto a small chassis. Feel free to tinker with the design.
+   Once the custom regulator circuit is ready, it is time to build the complete circuit. Use the circuit diagram shown below to make the connections. In addition to this, connect Motors 3 and 4 in parallel with motors 1 and 2 respectively. The spacers can be elevate the position of the Jetson board which makes it easier to fit all the components onto a small chassis. Feel free to tinker with the design.
    
 <p align="center">
   <img width="580" height="640" src="https://user-images.githubusercontent.com/34810513/79979248-d925b080-84be-11ea-9f89-b81b1eadd50b.jpeg">
