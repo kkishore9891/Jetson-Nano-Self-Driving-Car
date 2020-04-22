@@ -46,6 +46,6 @@ Instead of making the AI drive the car in a computer game, we use real world dat
 <p align="left">
   
 <img width="325" height="200" src="https://user-images.githubusercontent.com/34810513/79977737-5f8cc300-84bc-11ea-94d3-12505b291ee8.jpg">
-<img width="325" height="200" src="https://user-images.githubusercontent.com/34810513/79977737-5f8cc300-84bc-11ea-94d3-12505b291ee8.jpg">
+<img width="325" height="200" src="https://user-images.githubusercontent.com/34810513/79977923-b5616b00-84bc-11ea-901e-10539c5d49f6.jpeg">
   
 </p> 
