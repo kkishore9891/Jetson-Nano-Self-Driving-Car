@@ -124,9 +124,9 @@ Once the TF Lite Model is ready, copy the model into the Jetson Nano/Models fold
 
 ## Note
 
-1) You can change the architecture used to your own architecture by alter the code in MODEL.py in your PC. Make sure to change the destination direction to save the model.
-2) Unless you want to make some changes, do not change the hierarchy of the folders. It is vital that the current hierarchy is preserved as the codes have been written assuming the files required will be available in the respective paths.
-3) I have not provided the datasets that I have used as each path is unique in its own way and chances are that the model that I have trained won't work in your environment. Prepare your own datasets and train your own models.
+1) You can change the architecture used by us into your own architecture by altering the code in MODEL.py in your PC. Make sure to change the destination directory to save your model.
+2) Unless you want to make some changes, do not change the hierarchy of the folders. It is vital that the current hierarchy is preserved as the codes have been written, assuming that the files required will be available in the paths provided.
+3) I have not provided the datasets that I have used as each path is unique in its own way and chances are that the model which I have trained won't work properly in your environment. Prepare your own datasets and train your own models.
 
 ## Links
 1) Sentdex's Python Plays GTA-V: https://www.youtube.com/watch?v=ks4MPfMq8aQ&list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a
