@@ -7,7 +7,7 @@
   
 </p>
 
-Before getting started we(Myself and my friend Adithya UR) want to give a huge shoutout to Harrison Kinsley, the Founder of the YouTube channel "Sentdex". His series called "Python Plays GTA-V" served as the main inspiration to begin this project (Links for the series provided at the end of README.md). We were also lucky enough to get a personal comment from Sentdex Himself!!!
+Before getting started we(Myself and my friend Adithya UR) would like to give a huge shoutout to Harrison Kinsley, the Founder of the YouTube channel "Sentdex". His series called "Python Plays GTA-V" served as the main inspiration to begin this project (Link of the series provided at the end of README.md). We were also lucky enough to get a personal comment from Sentdex Himself!!!
 
 <p align="center">
    
@@ -31,11 +31,11 @@ Before getting started we(Myself and my friend Adithya UR) want to give a huge s
   <img width="1062" height="275" src="https://user-images.githubusercontent.com/34810513/79981811-ecd31600-84c2-11ea-9431-555dff3b42dc.jpg">
 </p>
 
-With that being said, let's get started building our self driving car.
+With that being said, let's start building our self driving car.
 
 ## Components And Connections
 
-We used the following components to build our prototype:
+We have used the following components to build our prototype:
  
  1) Eagle high discharge LIPO Battery (11.1V, 35C) - 1 pc.
  2) IC-7805 regulators - 4pcs.
@@ -54,7 +54,7 @@ We used the following components to build our prototype:
  
  #### Custom regulator circuit
  
-   The Jetson Nano board is a troublesome board. There are 2 major ways through which you can power the board. The first method is to use a 10W micro USB mobile charger and power the board through its micro USB port. Though this is handy and quick, it is not the best way to power the board. Although we can make the project portable using powerbanks, the board automatically switches off when the pwoer drawn by it exceeds 10 Watts. This makes it virtually impossible to use it for projects like our self driving car. Thus, the DC barrel Jack of Jetson Nano can be used to power the board. To do so, a small jumper should be fit into Jetson's J48 pins(For more info visit: https://www.jetsonhacks.com/2019/04/10/jetson-nano-use-more-power/). Once this is ready, we have to power the Jetson board using the LIPO battery. The LIPO battery is powerful and allows high current discharge. However, it supplies a voltage of 11V which will damage the board. This is why we need the 4 regulator ICs each IC has a maximum current rating of 1.5A. Thus connecting 4 of them in parralel lets us draw around 4 Amps of current with a voltage of 5V(20 Watts). This Acts as a stable power supply which can be used in our project.
+To setup the Jetson Nano Board visit the link provided atthe end of README.md. The Jetson Nano board is a troublesome board. There are 2 major ways through which you can power the board. The first method is to use a 10W micro USB mobile charger and power the board through its micro USB port. Though this is handy and quick, it is not the best way to power the board. Although we can make the project portable using powerbanks, the board automatically switches off when the pwoer drawn by it exceeds 10 Watts. This makes it virtually impossible to use it for projects like our self driving car. Thus, the DC barrel Jack of Jetson Nano can be used to power the board. To do so, a small jumper should be fit into Jetson's J48 pins(For more info visit: https://www.jetsonhacks.com/2019/04/10/jetson-nano-use-more-power/). Once this is ready, we have to power the Jetson board using the LIPO battery. The LIPO battery is powerful and allows high current discharge. However, it supplies a voltage of 11V which will damage the board. This is why we need the 4 regulator ICs each IC has a maximum current rating of 1.5A. Thus connecting 4 of them in parralel lets us draw around 4 Amps of current with a voltage of 5V(20 Watts). This Acts as a stable power supply which can be used in our project.
 
 <p align="center">
 <img width="275" height="250" src="https://user-images.githubusercontent.com/34810513/79977737-5f8cc300-84bc-11ea-94d3-12505b291ee8.jpg">
