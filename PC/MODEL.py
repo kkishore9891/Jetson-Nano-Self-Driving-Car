@@ -19,7 +19,7 @@ def augment(img): 										#Augmentation function.
   img=cv2.warpAffine(img,M,(128,128)) 								#Rotating the image using the matrix.
   return img 										#Return the augmented image.
  #################################PREPARING THE DATASET ################################
-data=np.load("TRAIN_BALANCED_STEER.npy",allow_pickle=True) 					#Load the balanced dataset.
+data=np.load("Datasets/TRAIN_BALANCED_STEER.npy",allow_pickle=True) 					          #Load the balanced dataset.
 X=np.array([augment(x[0]) for x in data ]) 								#Training input with augmented images.
 Y=np.array([np.array(x[1]) for x in data]) 								#Training targets.
 ##################################DEVELOPING THE MODEL#################################
