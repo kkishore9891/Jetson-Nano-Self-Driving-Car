@@ -63,7 +63,7 @@ To setup the Jetson Nano Board visit the link provided at the end of README.md. 
 </p> 
 
 <p align="center">
-  The custom regulator circuit. a) Circuit Diagram (Left) b) Top View (Center) c) Bottom View (Right)
+  The custom regulator circuit. a) Circuit Diagram (Left) b) Top View (Center) c) Front View (Right)
 </p>
 
 #### The Complete Circuit
@@ -82,7 +82,7 @@ After making the connections as shown above, it is time to setup the software of
 2) Jetson Nano
 3) PC
 
-Just as the name suggests, each folder contains codes to be run in Arduino UNO, Jetson Nano and the PC respectively. Follow the procedure to get the self driving car up and running.
+As the name suggests, each folder contains codes to be run in Arduino UNO, Jetson Nano and the PC respectively. Follow the procedure given below to get the self driving car up and running.
 
 #### 1. Download the repository
 
@@ -111,7 +111,7 @@ Run MODEL.py to run the training program. This code create a custom neural netwo
 
 #### 6. Convert the model to a TF-Lite model
 
-Run CONVERT.py to convert the hdf5 tensorflow model to a TF-Lite model. This quantises the hdf5 model by converting the weight from float to int. This retains the accuracy of the mode while making it much lighter. This allows Jetson Nano to perform the computations much faster than the usual. The TF Lite model is saved in Models/TF Lite Models.
+Run CONVERT.py to convert the hdf5 tensorflow model to a TF-Lite model. This quantises the hdf5 model by converting the weight from float to int. This retains the accuracy of the model while making it much lighter. This allows Jetson Nano to perform the computations much faster than usual. The TF Lite model is saved in Models/TF Lite Models folder.
 
 #### 7. Run the testing program.
 
@@ -121,10 +121,11 @@ Once the TF Lite Model is ready, copy the model into the Jetson Nano/Models fold
   <img width="257" height="210" src="https://user-images.githubusercontent.com/34810513/79985467-4722a580-84c8-11ea-9682-ba9deb25de65.gif">
 </p>
 
+Thank you!!!! 
 
 ## Note
 
-1) You can change the architecture used by us into your own architecture by altering the code in MODEL.py in your PC. Make sure to change the destination directory to save your model.
+1) You can change the architecture used by us into your own architecture by altering a few lines in MODEL.py in your PC. Make sure that you change the destination directory to save your new model. You can alse retrain the model by uncommenting one of the lines at the end in MODEL.py(You can easily find it inside the code).
 2) Unless you want to make some changes, do not change the hierarchy of the folders. It is vital that the current hierarchy is preserved as the codes have been written, assuming that the files required will be available in the paths provided.
 3) I have not provided the datasets that I have used as each path is unique in its own way and chances are that the model which I have trained won't work properly in your environment. Prepare your own datasets and train your own models.
 
