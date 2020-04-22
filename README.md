@@ -38,6 +38,8 @@ We used the following components to build our prototype:
  10) Wires and Jumper Cables - as per required.
  11) Metal spacers - 4 pcs
  12) Perf Board - 1
+ 13) Wireless Keyboard and Mouse.
+ 14) Wifi adapter chip for Jetson Nano(Optional).
  
  #### Custom regulator circuit
  
@@ -61,7 +63,31 @@ We used the following components to build our prototype:
   <img width="580" height="640" src="https://user-images.githubusercontent.com/34810513/79979248-d925b080-84be-11ea-9f89-b81b1eadd50b.jpeg">
 </p>
 
+## Using the Code
 
+There are 3 folders in the repository.
+
+1) Arduino Code
+2) Jetson Nano
+3) PC
+
+Just as the name suggests, each folder contains codes to be run in Arduino UNO, Jetson Nano and the PC respectively. Follow the procedure to get the self driving car up and running.
+
+#### 1. Download the repository
+
+This is the most simple and obvious step. Download the repository into your PC using the git command or the download option. All the folders have already been arranged for you in a way that the codes will run seamlessly.
+
+#### 2. Upload the Arduino Code
+
+Once you have downloaded the repo, connect the Arduino UNO to your PC and flash Motor.ino into it using the Arduino IDE. This code communicates with the Jetson Nano board using serial communication and controls the speeds of the motors.
+
+#### 3. Collect the Training data
+
+Now that the Arduino Code is ready, it is time to drive the car and collect the training data. Make your own track using A4 sheets or a flex banner with a track printed on it. Make sure that the "Images" folder and RECORD.py exist in the same folder and run RECORD.py program from terminal. The car starts to move after pressing either of the w a or d keys. To turn left press a, to turn right press d and to go forward press either w or press nothing. The car moves forward by default. Drive the car for atleast 20 laps to collect a decent amount of data to train the model. Make sure that the car has equal number of left and right turns and straight roads occasionally to acquired a robust data with all possible inputs and outputs. Press the "Esc" key to terminate the program. Open the images folder to look at all the images. The Targets.txt contains the respective steering angles for each images in a sequence.
+
+#### 4.Prepare the Dataset
+
+Copy the Images folder and Target.txt file to the PC folder.
 
 
 
