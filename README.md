@@ -20,5 +20,25 @@ To understand this, consider a computer game where a user can drive a car by pre
   <img width="325" height="200" src="https://user-images.githubusercontent.com/34810513/79974333-c3ac8880-84b6-11ea-8b67-1ee88e75583c.jpeg">
 </p>
 
-Instead of making the AI drive the car in a computer game, we use real world data obtained from a robotic car prototype.
+Instead of making the AI drive the car in a computer game, we use real world data obtained from a robotic car prototype. The AI processes the real world feed and keeps the prototype at the center of the lane.
 
+## Components And Connections
+
+ We used the following components to build our prototype:
+ 
+ 1) Eagle high discharge LIPO Battery (11.1V, 35C) - 1 pc.
+ 2) IC-7805 regulators - 4pcs.
+ 3) L298N motor driver module - 1 pc.
+ 4) 300 RPM Motors - 4 pcs.
+ 5) Arduino UNO - 1 pc.
+ 6) NVIDIA Jetson Nano board - 1 pc.
+ 7) I-Ball Web Camera - 1 pc.
+ 8) Metal Chassis - 1 pc.
+ 9) Wheels - 4 pcs.
+ 10) Wires and Jumper Cables - as per required.
+ 11) Metal spacers - 4 pcs
+ 12) Perf Board - 1
+ 
+ #### Custom regulator circuit
+ 
+ 
