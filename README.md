@@ -7,7 +7,7 @@
   
 </p>
 
-Before getting started we(Myself and my friend Adithya UR) want to give a Huge Shout Out to Harrison Kinsley, the Founder of the YouTube channel "Sentdex". His series called "Python Plays GTA-V" served as the main inspiration to begin this project (Links for the series provided at the end of README.md). We were also lucky enough to get a personal comment from Sentdex Himself!!!
+Before getting started we(Myself and my friend Adithya UR) want to give a huge shoutout to Harrison Kinsley, the Founder of the YouTube channel "Sentdex". His series called "Python Plays GTA-V" served as the main inspiration to begin this project (Links for the series provided at the end of README.md). We were also lucky enough to get a personal comment from Sentdex Himself!!!
 
 <p align="center">
    
